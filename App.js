@@ -4,8 +4,8 @@ import {
   View,
   TextInput,
   StyleSheet,
-  Image,
   TouchableOpacity,
+  Image,
   ScrollView,
 } from "react-native";
 
@@ -62,7 +62,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <View style={styles.textView}>
-          <Text style={styles.text}>To Do List</Text>
+          <Text style={styles.text}>To Do Simple</Text>
         </View>
         <View>
           <TextInput
@@ -87,7 +87,7 @@ export default class App extends React.Component {
           </View>
           <View>
             <TouchableOpacity style={styles.button1} onPress={() => this.noUpdate()}>
-              <Text style={styles.buttontext}>ok</Text>
+              <Text style={styles.buttontext}>OK</Text>
             </TouchableOpacity>
           </View>
 
@@ -101,7 +101,7 @@ export default class App extends React.Component {
                       style={styles.deleteButton}
                       onPress={() => this.deleteItem(item.id)}
                     >
-                      <Text style={styles.deleteButtonText}>Delete</Text>
+                      <Text style={styles.deleteButtonText}>Hapus</Text>
                     </TouchableOpacity>
                     <TouchableOpacity
                       style={styles.editButton}
@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     right: 20,
     top: 200,
-    backgroundColor: "maroon",
+    backgroundColor: "blue",
     width: 150,
     height: 50,
     borderRadius: 50,
@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     right: 20,
     top: 300,
-    backgroundColor: "maroon",
+    backgroundColor: "blue",
     width: 150,
     height: 50,
     borderRadius: 50,
@@ -172,13 +172,13 @@ const styles = StyleSheet.create({
   },
   textstyle: {
     fontSize: 20,
-    color: "maroon",
+    color: "blue",
   },
   listview: {
     borderWidth: 2,
     height: 40,
     justifyContent: "space-between",
-    borderColor: "maroon",
+    borderColor: "blue",
     marginLeft: 20,
     marginRight: 20,
     marginTop: 20,
@@ -186,21 +186,21 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   deleteButton: {
-    backgroundColor: "maroon",
+    backgroundColor: "blue",
     alignItems: "center",
     justifyContent: "center",
     padding: 10,
   },
   deleteButtonText: {
-    color: "white",
+    color: "yellow",
   },
   editButton: {
-    backgroundColor: "maroon",
+    backgroundColor: "blue",
     alignItems: "center",
     justifyContent: "center",
     padding: 10,
   },
   editButtonText: {
-    color: "white",
+    color: "yellow",
   },
 });
