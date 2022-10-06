@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet, Image } from 'react-native';
+import { Text, View, Image, StyleSheet } from 'react-native';
 
 export default class index extends Component {
   render() {
